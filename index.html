@@ -34,6 +34,7 @@
     h2 {
       font-size: clamp(1.3rem, 4vw, 1.8rem);
       color: #00ccff;
+      margin-top: 40px;
     }
 
     h3 {
@@ -54,6 +55,13 @@
 
     .btn:hover {
       background-color: #0099cc;
+    }
+
+    @media (min-width: 600px) {
+      .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+      }
     }
 
     nav {
@@ -90,6 +98,10 @@
       font-size: 0.9em;
       color: #888;
     }
+
+    ul {
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -97,6 +109,7 @@
 <nav>
   <a href="#services">Services</a>
   <a href="#pricing">Pricing</a>
+  <a href="#disclaimers">Disclaimers</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -128,7 +141,7 @@
   </ul>
 </section>
 
-<section>
+<section id="disclaimers">
   <h2>Disclaimers</h2>
   <ul>
     <li>📍 Local service area is Tampa Bay, FL</li>
